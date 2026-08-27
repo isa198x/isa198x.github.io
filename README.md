@@ -1,6 +1,6 @@
 # isa198x.github.io
 
-The Isa198x site. A skeleton: a wordmark, a sentence, and the shared kit
+The ISA198x site. A skeleton: a wordmark, a sentence, and the shared kit
 wired up — so the name has somewhere to point and the identity is applied from
 the start rather than retrofitted.
 
