@@ -1,0 +1,9 @@
+dist/
+.astro/
+.tmp/
+node_modules/
+
+# Shared kit, fetched at build time — never vendored.
+_198x-ui/
+# Copied out of the kit by scripts/fetch-ui.sh.
+public/fonts/

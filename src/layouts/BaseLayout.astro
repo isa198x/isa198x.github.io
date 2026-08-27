@@ -1,0 +1,33 @@
+---
+import '@198x-ui/tokens.css';
+import '@198x-ui/fonts.css';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Isa198x',
+  description = 'Instruction encoding, written down once. Isa198x is the executable instruction-set layer: encoding truth for every CPU the family touches, carrying pri',
+} = Astro.props;
+
+const pageTitle = title === 'Isa198x' ? title : `${title} - Isa198x`;
+---
+
+<!doctype html>
+<!-- data-tint carries the project colour as an ambient ground, at the ceilings
+     fixed in the kit's tokens.css. See family-visual-identity.md §3b. -->
+<html lang="en" data-tint="isa">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

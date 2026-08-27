@@ -1,0 +1,70 @@
+/* Everything here comes from the kit's tokens. A skeleton should not be
+   inventing values that family-visual-identity.md already fixes. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--h-page);
+  color: var(--h-ink-body);
+  font-family: var(--h-font-read);
+  font-size: var(--h-text-body);
+  line-height: var(--h-lh-body);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: var(--h-space-24) var(--h-inset) var(--h-space-16);
+  display: flex;
+  flex-direction: column;
+  /* Without this the plate, an inline-flex flex item, stretches to the full
+     column width and its lift traces an empty box beside the mark. */
+  align-items: flex-start;
+  gap: var(--h-space-6);
+}
+
+h1 {
+  font-family: var(--h-font-ui);
+  font-weight: var(--h-weight-major);
+  font-size: var(--h-text-h1);
+  line-height: var(--h-lh-h1);
+  letter-spacing: var(--h-tr-h1);
+  color: var(--h-ink);
+  text-wrap: balance;
+  margin: 0;
+}
+
+.lead {
+  font-size: var(--h-text-lead);
+  line-height: var(--h-lh-lead);
+  color: var(--h-ink-muted);
+  max-width: var(--h-measure);
+  margin: 0;
+}
+
+p { max-width: var(--h-measure); margin: 0; }
+
+.status {
+  font-family: var(--h-font-mono);
+  font-size: var(--h-text-small);
+  line-height: var(--h-lh-small);
+  color: var(--h-ink-muted);
+  border-left: 2px solid var(--h-line);
+  padding-left: var(--h-space-4);
+  margin: 0;
+}
+
+footer {
+  margin-top: var(--h-space-8);
+  padding-top: var(--h-space-6);
+  border-top: 1px solid var(--h-line);
+  font-size: var(--h-text-small);
+  line-height: var(--h-lh-small);
+  color: var(--h-ink-muted);
+}
+
+a { color: var(--h-accent-ink); }
+a:focus-visible { outline: 2px solid var(--h-accent); outline-offset: 3px; }
